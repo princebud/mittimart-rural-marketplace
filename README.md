@@ -236,6 +236,6 @@ mittimart/
 ## 🌾 Credits & Acknowledgements
 * **Presentation**: Startup Pitch Challenge 2026
 * **Academic Program**: BCA DS & AI (Data Science & Artificial Intelligence)
-* **Design & Strategy**: Vanshika & Zainab
-* **Technical Development**: Utkarsh Kumar Dubey, Prince Kumar, Sudhanshu Yadav
+* **Design & Strategy**: Prince kumar
+* **Technical Development**:Prince Kumar,
 * **Motto**: *"Aapki Mitti, Aapka Daam, MittiMart Aapke Sath"*
