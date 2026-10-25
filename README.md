@@ -2,8 +2,8 @@
 ### *"From Our Mitti to Your Market" | "आपकी मिट्टी, आपका दाम, मिट्टीमार्ट आपके साथ"*
 **Startup Pitch Challenge 2026 · College Presentation**  
 **Course:** BCA DS & AI  
-**Presented by:** Vanshika & Zainab  
-**Core Team:** Utkarsh Kumar Dubey, Prince Kumar, Sudhanshu Yadav  
+**Presented by:** Prince kumar
+**Core Team:** Prince Kumar 
 
 ---
 
@@ -101,7 +101,7 @@ The top navigation bar features a **1-Click Demo Persona Switcher** designed spe
    * `Confirmed` → `Transport Assigned` → `Dispatched / In Transit` → `Delivered & Settled`.
 3. When marked delivered, payment is released in full to the farmer (0% commission deducted).
 
-### Flow 5: Mitti Saathi Assisted Onboarding (🤝 Utkarsh Dubey)
+### Flow 5: Mitti Saathi Assisted Onboarding (🤝 Prince kumar )
 1. Click **🤝 Mitti Saathi** in the top demo bar.
 2. View the Mitti Saathi village facilitator desk (cluster: Sehore & Ashta).
 3. Click **"+ Onboard Village Farmer"** to register an unassisted farmer with farm size and crop details.
