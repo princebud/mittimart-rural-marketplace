@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>MittiMart - Rooted People · Real Markets | Aapki Mitti, Aapka Daam</title>
+  
+  <meta name="description" content="MittiMart connects farmers and rural producers directly with buyers, retailers, and wholesalers with local Mitti Saathi support. 0% farmer commission and 7% transparent fee."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>"/>
+
+  <!-- Google Fonts: Plus Jakarta Sans, Rozha One, Noto Sans Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'mitti-deep': '#16382b',
+            'mitti-green': '#245a43',
+            'mitti-leaf': '#3b825e',
+            'mitti-light': '#e8f5e9',
+            'mitti-gold': '#c88937',
+            'mitti-harvest': '#dda15e',
+            'mitti-clay': '#7c4a3e',
+            'mitti-cream': '#faf7f0',
+            'mitti-sand': '#f2ede2',
+            'mitti-border': '#e2d9cc'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body class="min-h-screen flex flex-col antialiased bg-mitti-cream text-neutral-800">
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed bottom-4 right-4 z-50 flex flex-col items-end pointer-events-none"></div>
+
+  <!-- Modal Container -->
+  <div id="modal-container"></div>
+
+  <!-- Navigation Bar Container -->
+  <div id="navbar-container"></div>
+
+  <!-- Dynamic SPA View Container -->
+  <main id="view-container" class="flex-1"></main>
+
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
+
+  <!-- Application Scripts in Exact Dependency Sequence -->
+  <script src="/js/i18n.js"></script>
+  <script src="/js/state.js"></script>
+  <script src="/js/api.js"></script>
+  
+  <!-- UI Components -->
+  <script src="/js/components/Navbar.js"></script>
+  <script src="/js/components/Hero.js"></script>
+  <script src="/js/components/ProductCard.js"></script>
+  <script src="/js/components/PricingCalculator.js"></script>
+  <script src="/js/components/FinancialOverview.js"></script>
+  <script src="/js/components/Modals.js"></script>
+  <script src="/js/components/Footer.js"></script>
+
+  <!-- Application Pages -->
+  <script src="/js/pages/HomePage.js"></script>
+  <script src="/js/pages/MarketplacePage.js"></script>
+  <script src="/js/pages/FarmerDashboard.js"></script>
+  <script src="/js/pages/BuyerDashboard.js"></script>
+  <script src="/js/pages/SaathiDashboard.js"></script>
+  <script src="/js/pages/AdminDashboard.js"></script>
+  <script src="/js/pages/AboutPage.js"></script>
+  <script src="/js/pages/TrustSafetyPage.js"></script>
+
+  <!-- Bootstrapper & Router -->
+  <script src="/js/app.js"></script>
+
+</body>
+</html>

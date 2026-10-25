@@ -1,0 +1,174 @@
+/* MittiMart Modern Indian Agricultural Design System */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+:root {
+  --mitti-deep: #16382b;
+  --mitti-green: #245a43;
+  --mitti-leaf: #3b825e;
+  --mitti-light: #e8f5e9;
+  --mitti-gold: #c88937;
+  --mitti-harvest: #dda15e;
+  --mitti-clay: #7c4a3e;
+  --mitti-cream: #faf7f0;
+  --mitti-sand: #f2ede2;
+  --mitti-border: #e2d9cc;
+  --mitti-text: #232220;
+  --mitti-muted: #66635e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--mitti-cream);
+  color: var(--mitti-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif-indian {
+  font-family: 'Rozha One', 'Plus Jakarta Sans', serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mitti-sand);
+}
+::-webkit-scrollbar-thumb {
+  background: #c5bba8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mitti-leaf);
+}
+
+/* MittiMart Branding Accents */
+.bg-mitti-deep { background-color: var(--mitti-deep); }
+.bg-mitti-green { background-color: var(--mitti-green); }
+.bg-mitti-leaf { background-color: var(--mitti-leaf); }
+.bg-mitti-gold { background-color: var(--mitti-gold); }
+.bg-mitti-cream { background-color: var(--mitti-cream); }
+.bg-mitti-sand { background-color: var(--mitti-sand); }
+.text-mitti-deep { color: var(--mitti-deep); }
+.text-mitti-green { color: var(--mitti-green); }
+.text-mitti-gold { color: var(--mitti-gold); }
+.text-mitti-clay { color: var(--mitti-clay); }
+.border-mitti { border-color: var(--mitti-border); }
+
+/* Emblem Seal Ring */
+.seal-ring {
+  border: 3px double #d4af37;
+  box-shadow: 0 4px 14px rgba(22, 56, 43, 0.15);
+}
+
+/* Product Card Micro-Interactions */
+.product-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--mitti-border);
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -6px rgba(22, 56, 43, 0.12);
+  border-color: var(--mitti-leaf);
+}
+
+/* Badges */
+.badge-verified {
+  background: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #c8e6c9;
+}
+.badge-saathi {
+  background: #fff8e1;
+  color: #f57f17;
+  border: 1px solid #ffe082;
+}
+.badge-mandi {
+  background: #f1f8e9;
+  color: #33691e;
+  border: 1px solid #dcedc8;
+}
+
+/* High Visibility Accessibility Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--mitti-green) 0%, var(--mitti-deep) 100%);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.65rem;
+  padding: 0.65rem 1.25rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(22, 56, 43, 0.2);
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--mitti-leaf) 0%, var(--mitti-green) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(22, 56, 43, 0.28);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: var(--mitti-deep);
+  border: 1.5px solid var(--mitti-border);
+  font-weight: 600;
+  border-radius: 0.65rem;
+  padding: 0.65rem 1.25rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-secondary:hover {
+  background: var(--mitti-sand);
+  border-color: var(--mitti-leaf);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #e6a848 0%, #c88937 100%);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.65rem;
+  padding: 0.65rem 1.25rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(200, 137, 55, 0.25);
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #f0b55d 0%, #b87a2a 100%);
+  transform: translateY(-1px);
+}
+
+/* Modal backdrop blur */
+.modal-backdrop {
+  background: rgba(14, 34, 26, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.25s ease forwards;
+}
+
+/* Demo persona banner */
+.demo-banner {
+  background: linear-gradient(90deg, #16382b 0%, #245a43 50%, #3b825e 100%);
+}

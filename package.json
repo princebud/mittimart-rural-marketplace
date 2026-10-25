@@ -1,0 +1,28 @@
+{
+  "name": "mittimart",
+  "version": "1.0.0",
+  "description": "MittiMart - Rural marketplace connecting farmers directly with buyers with local Mitti Saathi human support",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test/test-flows.js"
+  },
+  "keywords": [
+    "rural-commerce",
+    "agriculture",
+    "agritech",
+    "farmer-marketplace",
+    "direct-trade",
+    "mitti-saathi",
+    "transparent-pricing"
+  ],
+  "author": "Vanshika, Zainab, Utkarsh Kumar Dubey, Prince Kumar, Sudhanshu Yadav (BCA DS & AI)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.3.2"
+  }
+}
